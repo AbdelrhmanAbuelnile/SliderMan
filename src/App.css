@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #000;
+  overflow: hidden;
+  color: #fff;
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.swiper-pagination-horizontals {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.left{
+  transform: rotateZ(180deg);
+}
+
+.left img{
+  transform: rotateZ(-180deg);
+
+}
+
+.swiper-pagination-bullet {
+  background-color: #3ebb00;
+  width: 15px;
+  height: 15px;
+  margin: 5px 0;
+}
