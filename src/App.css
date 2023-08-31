@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #000;
+  background: #666;
   overflow: hidden;
   color: #fff;
 }
@@ -42,9 +42,35 @@ body {
 
 }
 
+.swiper-pagination{
+  background-color: #fff;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px 0;
+  position: absolute;
+  right: 0;
+}
+
 .swiper-pagination-bullet {
-  background-color: #3ebb00;
-  width: 15px;
-  height: 15px;
-  margin: 5px 0;
+  background-color: rgba(25, 25, 26,0.6);
+  width: 10px;
+  height: 10px;
+  margin: 15px;
+}
+
+.swiper-pagination-bullet:hover {
+  background-color: rgba(25, 25, 26,0.9);
+  transition: 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgb(25, 25, 26);
+}
+
+.content .swiper-slide {
+  padding: 15px;
 }
