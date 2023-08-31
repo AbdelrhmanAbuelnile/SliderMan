@@ -1,7 +1,7 @@
 export default function RightSlide9() {
   return (
     <>
-      <div className="content__main">
+      <div className="content__main slide9">
         <p>
           Adam Novak is the author of the novels Rat Park, The Non-Pro, Freaks
           of the Industry, and Take Fountain. He divides his time between

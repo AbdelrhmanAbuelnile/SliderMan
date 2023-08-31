@@ -1,7 +1,10 @@
-export default function RightSlide4() {
+import TypeIt from "typeit-react";
+
+export default function RightSlide4(props) {
+  const quote = props.type[3]
   return (
     <>
-      <div className="content__main">
+      <div className="content__main alotOfText">
         <p>
           In the tradition of Mark Z. Danielewski's House of Leaves and P.T.
           Anderson's Magnolia, Adam Novak explores the city of angels and demons
@@ -41,9 +44,16 @@ export default function RightSlide4() {
         <br />
         <div className="quotes">
           <div className="quotes">
-            <p className="quote"></p>
-            <p className="author"></p>
-            <p className="affiliation"></p>
+            <TypeIt 
+                options={{
+                  loop: true,
+                  waitUntilVisible: true,
+                }}
+              >
+                <p className="quote">{quote.quote}</p>
+              </TypeIt>
+            <p className="author">{quote.author}</p>
+            <p className="affiliation">{quote.affiliation}</p>
           </div>
         </div>
       </div>

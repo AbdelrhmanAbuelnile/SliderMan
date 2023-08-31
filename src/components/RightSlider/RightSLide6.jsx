@@ -1,7 +1,7 @@
 export default function RightSlide6() {
   return (
     <>
-      <div className="content__main">
+      <div className="content__main slide-of-buttons">
         <h2>Excerpts</h2>
         <h3>Rat Park</h3>
         <a href="https://theartifactuals.com/rat-park/ " target="_blank">

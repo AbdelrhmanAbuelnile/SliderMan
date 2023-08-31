@@ -1,7 +1,7 @@
 export default function RightSlide8() {
   return (
     <>
-      <div className="content__main">
+      <div className="content__main slide8">
         <h2>Show your support and nab some swag!</h2>
         <a
           href="https://www.funnyshirts.org/design/4142349/Rat+Park+w%2F+back

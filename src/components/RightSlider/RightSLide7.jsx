@@ -6,10 +6,10 @@ export default function RightSlide7() {
         <h3>Rare Bird Radio - Conversation with Tyler Knight</h3>
         <a
           href="
-                            https://soundcloud.com/rarebirdlit/adam-novak-in-conversation-with-tyler-knight"
+            https://soundcloud.com/rarebirdlit/adam-novak-in-conversation-with-tyler-knight" 
           target="_blank"
         >
-          <button className="custom-btn btn-12">
+          <button className="custom-btn btn-12 sounds">
             <span>Listen</span>
             <span>SoundCloud</span>
           </button>

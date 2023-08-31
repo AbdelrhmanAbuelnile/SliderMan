@@ -1,4 +1,7 @@
-export default function RightSlide2() {
+import TypeIt from "typeit-react";
+
+export default function RightSlide2(props) {
+  const quote = props.type[1];
   return (
     <>
       <div className="content__main">
@@ -25,13 +28,21 @@ export default function RightSlide2() {
           </a>
         </div>
         <br />
-        <div className="quotes">
           <div className="quotes">
-            <p className="quote"></p>
-            <p className="author"></p>
-            <p className="affiliation"></p>
+            <div className="quotes">
+              <TypeIt 
+                options={{
+                  loop: true,
+                  waitUntilVisible: true,
+                }}
+              >
+                <p className="quote">{quote.quote}</p>
+              </TypeIt>
+              <p className="author">{quote.author}</p>
+              <p className="affiliation">{quote.affiliation}</p>
+            </div>
           </div>
-        </div>
+
       </div>
       <h3 className="content__index">02</h3>
     </>

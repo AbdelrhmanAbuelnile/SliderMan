@@ -1,4 +1,7 @@
-export default function RightSlide3() {
+import TypeIt from "typeit-react";
+
+export default function RightSlide3(props) {
+  const quote = props.type[2];
   return (
     <>
       <div className="content__main">
@@ -7,7 +10,7 @@ export default function RightSlide3() {
           Angeles. It turns out to be a piece of missing evidence in a murder
           investigation that ran cold. Take Fountain is the reprinting of that
           transcript, and only by reading the entire conversation can the murder
-          be solved.{" "}
+          be solved.
         </p>
         <p>
           Take Fountain is a truly unique novel that slowly simmers to boil as
@@ -25,9 +28,16 @@ export default function RightSlide3() {
         <br />
         <div className="quotes">
           <div className="quotes">
-            <p className="quote"></p>
-            <p className="author"></p>
-            <p className="affiliation"></p>
+            <TypeIt 
+                options={{
+                  loop: true,
+                  waitUntilVisible: true,
+                }}
+              >
+                <p className="quote">{quote.quote}</p>
+              </TypeIt>
+            <p className="author">{quote.author}</p>
+            <p className="affiliation">{quote.affiliation}</p>
           </div>
         </div>
       </div>

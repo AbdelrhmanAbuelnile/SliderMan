@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-cube";
@@ -29,6 +28,7 @@ import LeftSlide8 from "./components/LeftSlider/LeftSLide8";
 import LeftSlide9 from "./components/LeftSlider/LeftSLide9";
 
 import "./App.css";
+import "./style.css";
 
 // import required modules
 import { EffectCube, Pagination, Controller, Autoplay } from "swiper/modules";
@@ -37,6 +37,35 @@ export default function App() {
   const pagination = {
     clickable: true,
   };
+
+  const quotes = [
+    {
+        quote: "\"The craziest goddamn thing I've read in a long time.\"",
+        author: "Alexander Payne",
+        affiliation: "Academy-Award winning writer/director of Sideways and The Descendants"
+    },
+    {
+        quote: "\" Strange genius mixed with stomach-turning madness. \"",
+        author: "Matt Greenberg",
+        affiliation: "screenwriter of 1408 and Pet Sematary"
+    },
+    {
+        quote: "\" I'm sniffing a breakthrough. It's like Bret Easton Ellis and Philip K. Dick had a baby, and the baby wrote a book. \"",
+        author: "Jerry Stahl",
+        affiliation: "author of Permanent Midnight and Bad Sex on Speed"
+    },
+    {
+        quote: "\" So successfully strange it's almost its own genre. Holding a mirror, if not a hall of mirrors to our culture where we disappear and find ourselves at the same time. \"",
+        author: "Aris Janigan",
+        affiliation: "author of Waiting for Lipchitz at Chateau Marmont"
+    },
+    {
+        quote: "\" Adam Novak has a merciless eye for a society in which striving replaces every consideration of morality. \"",
+        author: "Michael Tolkin",
+        affiliation: "author of The Player"
+    }
+  ];
+
   const speed = 1000
   const [controlledSwiper, setControlledSwiper] = useState(null);
   return (
@@ -52,23 +81,23 @@ export default function App() {
         speed={speed}
       >
         <SwiperSlide>
-          <RightSlide1 />
+          <RightSlide1 type = {quotes} />
         </SwiperSlide>
 
         <SwiperSlide>
-          <RightSlide2 />
+          <RightSlide2 type = {quotes} />
         </SwiperSlide>
 
         <SwiperSlide>
-          <RightSlide3 />
+          <RightSlide3 type = {quotes} />
         </SwiperSlide>
 
         <SwiperSlide>
-          <RightSlide4 />
+          <RightSlide4 type = {quotes} />
         </SwiperSlide>
 
         <SwiperSlide>
-          <RightSlide5 />
+          <RightSlide5 type = {quotes} />
         </SwiperSlide>
 
         <SwiperSlide>
